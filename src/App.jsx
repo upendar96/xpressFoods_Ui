@@ -3,7 +3,7 @@ import LandingPage from './pages/LandingPage'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
 import ProductMenu from './components/ProductMenu'
-import Welcome from './components/welcome'
+import Welcome from './components/Welcome'
 import OrderHistory from './extra/OrderHistory'
 
 
