@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { API_URL } from '../api';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import FooterPage from '../pages/footerPage';
+import FooterPage from '../pages/FooterPage';
 
 
 const Login = ({ welcomeHandler, registerHandler }) => {
