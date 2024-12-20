@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import FooterPage from '../pages/FooterPage';
 
 
+
 const Login = ({ welcomeHandler, registerHandler }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -150,6 +151,7 @@ const Login = ({ welcomeHandler, registerHandler }) => {
       <p>if not existing user<button onClick={registerHandler}>register</button></p>
 
       <FooterPage />
+     
     </>
   );
 };

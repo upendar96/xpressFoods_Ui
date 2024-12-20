@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { API_URL } from '../api';
-
+import {Link} from 'react-router-dom'
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
   const [error, setError] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState({
+    products:[],
+    firms:[]
+
+  });
 
   const handleSearch = async () => {
     try {
@@ -28,7 +32,7 @@ const SearchBar = () => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for products"
+          placeholder="Search for Resturant,cuisine or a dish"
           className="search-input"
         />
         <button onClick={handleSearch} className="search-button">Search</button>
@@ -37,18 +41,26 @@ const SearchBar = () => {
       </div>
 
       <div className="search-results">
-        {results.length > 0 ? (
+       
           <ul className="results-list">
-            {results.map((item) => (
+            {results.products.map((item) => (
               <li key={item._id} className="result-item">
                 <h4>{item.ProductName}</h4>
                 <img src={`${API_URL}/uploads/${item.image}`} alt={item.ProductName} className="result-image" />
               </li>
             ))}
           </ul>
-        ) : (
-          <p className="no-results">No results found</p>
-        )}
+          
+          <ul className="results-list">
+            {results.firms.map((item) => (
+              <li key={item._id} className="result-item">
+                 <Link to={`/products/${item._id}/${item.firmName}`} className="firm-link">
+                <h4>{item.firmName}</h4>
+                <img src={`${API_URL}/uploads/${item.image}`} alt={item.firmName} className="result-image" /></Link>
+              </li>
+            ))}
+          </ul>
+        
       </div>
     </div>
   );

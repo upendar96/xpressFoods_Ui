@@ -80,11 +80,11 @@ export default TopBar;*/}
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUserCircle, FaShoppingCart, FaHeartbeat } from 'react-icons/fa';
+import Dropdown from '../extra/DropDown';
 
 
 
-const TopBar = ({ profileHandler, wishlistHandler, cartHandler }) => {
+const TopBar = () => {
     return (
         <div className='topBarSection'>
             <div className="topBarContainer">
@@ -93,20 +93,7 @@ const TopBar = ({ profileHandler, wishlistHandler, cartHandler }) => {
                         <h2 className="companyTitle">XpressFoods</h2>
                     </Link>
                 </div>
-
-                <div className='icons'>
-                    <a className="icon" onClick={cartHandler}>
-                        <FaShoppingCart size={20} color="white" />
-                    </a>
-                    <a className="icon" onClick={wishlistHandler}>
-                        <FaHeartbeat size={20} color="white" />
-                    </a>
-                    <a className="icon" onClick={profileHandler}>
-                        <FaUserCircle size={20} color="white" />
-                    </a>
-                    <Link to='/orderhistory' className='link' >
-                                 <h4 className='oH'>OrderHistory</h4></Link>
-                </div>
+                <Dropdown/>
                 
             </div>
         </div>

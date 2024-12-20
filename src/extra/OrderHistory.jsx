@@ -34,8 +34,8 @@ const OrderHistory = () => {
     <div className="order-history-container">
       {error && <p className="text-danger">{error}</p>}
       <div className="order-list">
-        {orders.map((order) => (
-          <div className="order-card" key={order.orderId}>
+        {orders.map((order,index) => (
+          <div className="order-card" key={order.id||index}>
             <h4 className="order-id">Order ID: {order.orderId}</h4>
             <p className="order-total">Total: ₹{order.total}</p>
             <p className="order-date">Date: {new Date(order.orderDate).toLocaleString()}</p>

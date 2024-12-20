@@ -36,18 +36,20 @@ const LandingPage = () => {
   return (
     <div>
       {showTop && <TopBar2 />}
-     
+    
         {showLogin && (
          
             <Login welcomeHandler={welcomeHandler} loginHandler={loginHandler} registerHandler={registerHandler} />
          
         )}
+     
         {showRegister && (
         
             <Register  loginHandler={loginHandler}/>
         
         )}
         {showWelcome && <Welcome />}
+        
       </div>
 
   );

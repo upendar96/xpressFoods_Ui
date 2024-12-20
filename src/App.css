@@ -16,6 +16,7 @@ body {
 .topBarSection {
   background-color: #fa0000; /* Dark background for the top bar */
   padding: 10px 0; /* Some padding for spacing */
+
 }
 
 /* Container for the top bar contents */
@@ -26,6 +27,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
 }
 
 /* Logo section */
@@ -79,6 +81,7 @@ body {
 .topBarSection {
   background-color: #ff0000; /* Dark background for the top bar */
   padding: 10px 0; /* Some padding for spacing */
+
 }
 
 /* Container for the top bar contents */
@@ -89,6 +92,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+ 
 }
 
 /* Company title */
@@ -327,32 +331,36 @@ label {
 }
 
 
+
 /**===============================REGISTERSECTION====================*/
 /* Register.css */
 
 .register-container {
+  margin-right: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  width: 1450px;
 }
 
 .icon-container {
   margin-bottom: 20px;
+  width: 500px;
+  margin-left: 800px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #333;
   margin-bottom: 20px;
 }
 
 .register-form {
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
+ 
+
+padding-left: 800px;
+  width: 600px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -362,6 +370,8 @@ h1 {
 
 .form-group {
   margin-bottom: 20px;
+ justify-content: center;
+ align-items: center;
 }
 
 label {
@@ -371,7 +381,7 @@ label {
 }
 
 .input-field {
-  width: 100%;
+  width: 300px;
   padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -445,14 +455,14 @@ input::placeholder {
 
 /* Styling for each item card */
 .item-card {
-  width: 100%;
+  width: 155px;
   display: flex;
   justify-content: center;
 }
 
 /* Card style */
 .card {
-  width: 140px;
+  width: 180px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -496,6 +506,8 @@ input::placeholder {
 
 /* Banner Section */
 .banner {
+  background-image: url(https://wallpapers.com/images/hd/food-4k-spdnpz7bhmx4kv2r.jpg);
+ 
   background-color: #f8f8f8;
   padding: 50px 20px;
   text-align: center;
@@ -505,8 +517,10 @@ input::placeholder {
 .bannerText {
   font-size: 2.5rem;
   line-height: 1.2;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  color: white; text-align: center; background-color: rgba(12, 10, 10, 0.5); /* Semi-transparent background */ border-radius: 10px;
 }
+.banner-text h1, .banner-text p { text-shadow: 2px 2px 4px rgba(18, 16, 16, 0.8); }
 
 /* Media Section */
 .mediaChainSection {
@@ -626,7 +640,7 @@ input::placeholder {
  
 }
 
-.firm-title {
+.firm-title1 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 30px;
@@ -755,8 +769,8 @@ input::placeholder {
 
 .firm-title {
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-bottom: 30px;
 }
 
@@ -1010,8 +1024,9 @@ p {
 
 /* Container for the entire cart page */
 .cart-container {
-  padding: 20px;
   font-family: Arial, sans-serif;
+  display: flex;
+ 
 }
 
 h1 {
@@ -1023,7 +1038,6 @@ h1 {
 /* Cart Items Grid */
 .cart-items {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
@@ -1036,6 +1050,7 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  display: flex;
 }
 
 .cart-item-inner {
@@ -1641,3 +1656,7 @@ h1 {
 .oH:hover{
   background-color: #28a745;
 }
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+

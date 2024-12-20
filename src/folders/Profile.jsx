@@ -41,7 +41,6 @@ export const Profile = () => {
           <EditProfile />
          
         </div>
-        <OrderHistory/>
       </div>
     </>
   );

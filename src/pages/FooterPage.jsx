@@ -10,7 +10,7 @@ export const FooterPage = () => {
       </div>
 
       <div className='cities text-center mt-4'>
-        <h2>Cities With Food Delivery</h2>
+        <h2>Major Cities Using Our Food delivery services</h2>
         <button className="city-btn">Hyderabad</button>
         <button className="city-btn">Bangalore</button>
         <button className="city-btn">Mumbai</button>

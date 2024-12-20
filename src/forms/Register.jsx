@@ -53,9 +53,6 @@ function Register({loginHandler}) {
 
     return (
         <div className="register-container">
-            <div className="icon-container">
-                <FaUserCircle size={48} color="#007bff" />
-            </div>
             <h1>User Registration</h1>
             <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
